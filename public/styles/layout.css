@@ -35,3 +35,14 @@ body {
   background-color: #f4f1ec;
 }
 
+.tweet {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
