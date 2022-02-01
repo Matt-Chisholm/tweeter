@@ -1,0 +1,50 @@
+article {
+  border: solid black 3px;
+  border-radius: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  margin: 30px 0 10px 0;
+  color:darkcyan;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+}
+
+.name-icon {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.tweetheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tweetheader h3 {
+margin: 0;
+}
+
+.tweetitself {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: darkcyan;
+  border-bottom: rgb(255, 255, 255) solid 3px;
+}
+.tweetfooter {
+  border-bottom: black solid 3px;
+  display: flex;
+  justify-content: space-between;
+  color: darkcyan;
+}
+.icon-footer {
+  color: darkcyan;
+  cursor: pointer;
+}
+.icon-footer:hover {
+  color: cornflowerblue;
+} 
