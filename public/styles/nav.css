@@ -4,8 +4,10 @@ nav {
   justify-content: space-between;
   background-color: #4056A1;
   height: 120px;
+	position: sticky;
+  top: 0;
+	width: 100%;
   z-index: 10;
-  position: relative;
 }
 
 .navitems {
