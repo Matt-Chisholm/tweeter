@@ -11,6 +11,7 @@ article {
   color:darkcyan;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .name-icon {
@@ -26,6 +27,11 @@ article {
   justify-content: space-around;
 }
 
+#newtonimg {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
 
 .tweetitself {
   display: flex;
@@ -34,6 +40,7 @@ article {
   color: darkcyan;
   border-bottom: rgb(255, 255, 255) solid 3px;
 }
+
 .tweetfooter {
   border-bottom: black solid 3px;
   display: flex;
