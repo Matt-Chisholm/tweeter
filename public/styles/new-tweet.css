@@ -46,11 +46,16 @@
   color: rgb(255, 255, 255);
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 30px;
   font-family: 'Bungee', cursive;
+  border: darkcyan solid 2px;
+  cursor: pointer;
+}
+
+.tweetbutton:hover {
+  background-color: darkcyan;
 }
 
 .redtext {
