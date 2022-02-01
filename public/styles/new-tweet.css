@@ -16,6 +16,13 @@
 
 }
 
+.composetweet {
+  text-indent: 3px;
+  display: flex;
+  justify-content: center;
+  color: cornflowerblue;
+}
+
 .underform {
   display: flex;
   justify-content: space-between;
