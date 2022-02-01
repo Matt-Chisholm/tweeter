@@ -1,5 +1,5 @@
 
-$(document).ready(() => {
+$(() => {
     
   $(".tweet-text").on("input", function(e) {
     let inputLength = $(".tweet-text").val()
