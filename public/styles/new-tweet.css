@@ -7,7 +7,7 @@
   border-radius: 15px;
 }
 
-#tweet-text {
+.tweet-text {
   background-color: #f4f1ec;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   width: 600px;
@@ -49,4 +49,8 @@
   font-size: 16px;
   border-radius: 30px;
   font-family: 'Bungee', cursive;
+}
+
+.redtext {
+  color: red;
 }
