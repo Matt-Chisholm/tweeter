@@ -1,6 +1,6 @@
 article {
   border: solid black 3px;
-  border-radius: ;
+  box-shadow: 5px 7px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,9 +24,6 @@ article {
   justify-content: space-around;
 }
 
-.tweetheader h3 {
-margin: 0;
-}
 
 .tweetitself {
   display: flex;
