@@ -1,35 +1,41 @@
 article {
   border: solid black 3px;
-  box-shadow: 5px 7px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 800px;
   /* height: 300px; */
   padding: 10px;
   margin: 30px 0 10px 0;
-  color:darkcyan;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   margin-bottom: 100px;
   margin-top: 100px;
+  background-color: #e3f8ff;
+  color:darkcyan;
 }
 
-.name-icon {
-  display: flex;
-  /* margin-top: 10px; */
-  margin-right: 270px;
-  justify-content: space-between;
+article:hover {
+  box-shadow: 5px 7px;
 }
+
 
 .tweetheader {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-#newtonimg {
-  width: 50px;
-  height: 50px;
+.name {
+  display: flex;
+  /* margin-top: 10px; */
+  margin-right: 270px;
+  justify-content: space-between;
+  align-self:flex-start;
+}
+
+.userimg {
+  width: 60px;
+  height: 60px;
   margin-top: 20px;
 }
 
@@ -37,18 +43,18 @@ article {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  color: darkcyan;
-  border-bottom: rgb(255, 255, 255) solid 3px;
+  color: rgb(58, 58, 58);
+  border-bottom: rgb(10, 10, 10) solid 3px;
 }
 
 .tweetfooter {
   border-bottom: black solid 3px;
   display: flex;
   justify-content: space-between;
-  color: darkcyan;
+  color: rgb(58, 58, 58);
 }
 .icon-footer {
-  color: darkcyan;
+  color: lightslategrey;
   cursor: pointer;
 }
 .icon-footer:hover {

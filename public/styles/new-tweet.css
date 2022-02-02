@@ -5,9 +5,12 @@
   background-color: #e3f8ff;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   border-radius: 15px;
-  box-shadow: 5px 7px;
   color: darkcyan;
   border: black solid 2px;
+}
+
+.new-tweet:hover {
+  box-shadow: 5px 7px;
 }
 
 .tweet-text {
