@@ -32,6 +32,12 @@
 
 // Document.ready
 $(() => {
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = (tweet) => {
     let html = `<article>
           <header class="tweetheader">
@@ -39,7 +45,7 @@ $(() => {
             <h5>${tweet.user.handle}</h5>
           </header>
           <p class="tweetitself">
-            ${tweet.content.text}
+            ${escape(tweet.content.text)}
           </p>
           <footer class="tweetfooter">
             <div class="tweettime">${timeago.format(tweet.created_at)}</div>
@@ -80,7 +86,6 @@ $(() => {
   $('form').on("submit", (event) => {
     event.preventDefault();
     const $text = $(".tweet-text").val();
-    console.log($text);
     const data = $("form").serialize();
     if (!$text.length) {
       return alert("Cannot tweet an empty form!");
