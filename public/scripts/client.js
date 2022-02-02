@@ -29,46 +29,63 @@ const data = [
     "created_at": 1461113959088
   }
 ]
+
+// Document.ready
 $(() => {
-  // Rendering the tweet and adding it to the DOM
-const renderTweets = (tweets) => {
-  $.ajax({
-    url: "/tweets",
-    action: "GET"
-  })
-  .then((res) => {
-
-    for (const user of res) {
-      const $tweet = createTweetElement(user);
+    // Rendering the tweet and adding it to the DOM
+  const renderTweets = (tweets) => {
+    $.ajax({
+      url: "/tweets",
+      action: "GET"
+    })
+    .then((res) => {
       const $tweetlist = $(".tweetcontainer");
-      $tweetlist.prepend($tweet);
-    }
-  })
-};
+      $tweetlist.empty();
+      for (const user of res) {
+        const $tweet = createTweetElement(user);
+        $tweetlist.prepend($tweet);
+      }
+    })
+  };
 
-// Creating a tweet from db and input from user
-const createTweetElement = (tweet) => {
-  let html = `<article>
-        <header class="tweetheader">
-          <div class="name"><img class="userimg" src="${tweet.user.avatars}"><h3>${tweet.user.name}</h3></div>
-          <h5>${tweet.user.handle}</h5>
-        </header>
-        <p class="tweetitself">
-          ${tweet.content.text}
-        </p>
-        <footer class="tweetfooter">
-          <div class="tweettime">${timeago.format(tweet.created_at)}</div>
-          <div>
-            <i class="fas fa-flag icon-footer"></i>
-            <i class="fas fa-heart icon-footer"></i>
-            <i class="fas fa-retweet icon-footer"></i>
-    
-          </div>
-        </footer>
-      </article>`
-  return html
-}
+  // Creating a tweet from db and input from user
+  const createTweetElement = (tweet) => {
+    let html = `<article>
+          <header class="tweetheader">
+            <div class="name"><img class="userimg" src="${tweet.user.avatars}"><h3>${tweet.user.name}</h3></div>
+            <h5>${tweet.user.handle}</h5>
+          </header>
+          <p class="tweetitself">
+            ${tweet.content.text}
+          </p>
+          <footer class="tweetfooter">
+            <div class="tweettime">${timeago.format(tweet.created_at)}</div>
+            <div>
+              <i class="fas fa-flag icon-footer"></i>
+              <i class="fas fa-heart icon-footer"></i>
+              <i class="fas fa-retweet icon-footer"></i>
+            </div>
+          </footer>
+        </article>`;
 
-renderTweets(data);
+    return html
+  }
 
+  renderTweets(data);
+
+// AJAX POST request for form
+  $('form').on("submit", (e) => {
+    e.preventDefault();
+    const data = $("form").serialize();
+    const $tweet = $(".tweetitself").val();
+    $.ajax({
+      url: "/tweets",
+      method: "POST",
+      data
+    }).then(() => {
+      renderTweets();
+      // clears form after submit
+      $('form').trigger('reset');
+    })
+  });
 })
