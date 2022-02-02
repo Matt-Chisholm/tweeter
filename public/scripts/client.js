@@ -77,15 +77,16 @@ $(() => {
   loadTweets();
 
 // AJAX POST request for form
-  $('form').on("submit", (e) => {
-    e.preventDefault();
+  $('form').on("submit", (event) => {
+    event.preventDefault();
+    const $text = $(".tweet-text").val();
+    console.log($text);
     const data = $("form").serialize();
-    const $tweet = $(".tweetitself").val();
-    if (!$('.tweetitself').val()) {
-      return alert('You cannot post an empty tweet!');
+    if (!$text.length) {
+      return alert("Cannot tweet an empty form!");
     }
-    if ($('.tweetitself').val().length > 140) {
-      return alert("Your tweet exceeds the maximum characters");
+    if ($text.length > 140) {
+      return alert("Cannot tweet more than 140 characters!");
     }
     $.ajax({
       url: "/tweets",
