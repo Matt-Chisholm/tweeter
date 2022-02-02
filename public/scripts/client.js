@@ -56,7 +56,7 @@ $(() => {
 
 
   const renderTweets = (tweets) => {
-    console.log(tweets);
+    // console.log(tweets);
       $(".tweetcontainer").empty();
       for (let tweet of tweets) {
         const $tweet = createTweetElement(tweet);
@@ -70,7 +70,6 @@ $(() => {
       url: "/tweets",
       method: "GET",
     }).then((data) => {
-        console.log("grabbing tweets from database");
         renderTweets(data);
       })
   };
@@ -82,6 +81,12 @@ $(() => {
     e.preventDefault();
     const data = $("form").serialize();
     const $tweet = $(".tweetitself").val();
+    if (!$('.tweetitself').val()) {
+      return alert('You cannot post an empty tweet!');
+    }
+    if ($('.tweetitself').val().length > 140) {
+      return alert("Your tweet exceeds the maximum characters");
+    }
     $.ajax({
       url: "/tweets",
       method: "POST",
