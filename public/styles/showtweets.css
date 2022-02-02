@@ -41,6 +41,9 @@ article:hover {
 
 .tweetitself {
   display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  width: 774px;
   justify-content: flex-start;
   align-items: flex-end;
   color: rgb(58, 58, 58);

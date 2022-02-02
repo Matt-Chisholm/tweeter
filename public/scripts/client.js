@@ -29,9 +29,9 @@ const data = [
     "created_at": 1461113959088
   }
 ]
-
-// Rendering the tweet and adding it to the DOM
-const renderTweets = (tweets) =>{
+$(() => {
+  // Rendering the tweet and adding it to the DOM
+const renderTweets = (tweets) => {
   $.ajax({
     url: "/tweets",
     action: "GET"
@@ -40,8 +40,8 @@ const renderTweets = (tweets) =>{
 
     for (const user of res) {
       const $tweet = createTweetElement(user);
-      const $tweetlist = $("main");
-      $tweetlist.append($tweet);
+      const $tweetlist = $(".tweetcontainer");
+      $tweetlist.prepend($tweet);
     }
   })
 };
@@ -66,8 +66,9 @@ const createTweetElement = (tweet) => {
           </div>
         </footer>
       </article>`
-
   return html
 }
 
 renderTweets(data);
+
+})
