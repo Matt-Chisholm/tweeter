@@ -29,6 +29,8 @@ const data = [
     "created_at": 1461113959088
   }
 ]
+
+// Rendering the tweet and adding it to the DOM
 const renderTweets = (tweets) =>{
   $.ajax({
     url: "/tweets",
@@ -44,6 +46,7 @@ const renderTweets = (tweets) =>{
   })
 };
 
+// Creating a tweet from db and input from user
 const createTweetElement = (tweet) => {
   let html = `<article>
         <header class="tweetheader">
