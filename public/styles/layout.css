@@ -36,11 +36,3 @@ body {
   background-color: #e3f8ff;
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
-
-.error {
-  width: 100%;
-  color: red;
-  padding: 10px;
-  border: black solid 3px;
-  display: none;
-}

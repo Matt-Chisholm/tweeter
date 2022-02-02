@@ -23,6 +23,21 @@ nav {
   flex-direction: column;
 }
 
+.newtweetnav:hover {
+  margin-top: 10px;
+  cursor: pointer;
+  color: darkcyan;
+}
+
+.newtweetnav:hover > .fa-solid {
+  color:darkorchid;
+  padding-bottom: 10px;
+}
+
+.newtweetnav:active {
+  margin-bottom: 0;
+}
+
 .fa-solid {
  color: orange;
 }

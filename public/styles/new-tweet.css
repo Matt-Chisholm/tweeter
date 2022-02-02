@@ -1,5 +1,5 @@
 .new-tweet {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   background-color: #e3f8ff;
@@ -64,4 +64,14 @@
 
 .redtext {
   color: red;
+}
+
+.error {
+  width: 100%;
+  background-color: whitesmoke;
+  color: red;
+  padding: 10px;
+  border: black solid 3px;
+  display: none;
+  text-align: center;
 }

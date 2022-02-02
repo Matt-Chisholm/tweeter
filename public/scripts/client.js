@@ -37,7 +37,7 @@ $(() => {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
+// Dynamically create tweet element
   const createTweetElement = (tweet) => {
     let html = `<article>
           <header class="tweetheader">
@@ -60,7 +60,7 @@ $(() => {
     return html
   };
 
-
+// Render tweets from db
   const renderTweets = (tweets) => {
     // console.log(tweets);
       $(".tweetcontainer").empty();
@@ -70,7 +70,7 @@ $(() => {
       }
   };
   
-
+// Get method to retrieve tweets to send to render
   const loadTweets = function() {
     $.ajax({
       url: "/tweets",
@@ -88,19 +88,29 @@ $(() => {
     const $text = $(".tweet-text").val();
     const data = $("form").serialize();
     if (!$text.length) {
-      return alert("Cannot tweet an empty form!");
+      $(".error").text("Cannot tweet an empty form!");
+      $(".error").slideDown();
+      return;
     }
     if ($text.length > 140) {
-      return alert("Cannot tweet more than 140 characters!");
+      $(".error").text("Cannot tweet more than 140 characters!");
+      $(".error").slideDown();
+      return;
     }
     $.ajax({
       url: "/tweets",
       method: "POST",
       data
     }).then(() => {
+      $(".error").slideUp();
       loadTweets();
       // clears form after submit
       $('form').trigger('reset');
     })
   });
+  
+// Toggles the new-tweet form 
+  $('.newtweetnav').on('click', function() {
+    $('.new-tweet').slideToggle(200);
+  })
 })
