@@ -15,6 +15,16 @@ nav {
 
 .logo {
   font-size: 1.2em;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: cornflowerblue;
+  
+}
+
+.logo:active {
+  color:cornsilk;
 }
 
 .navitems {
