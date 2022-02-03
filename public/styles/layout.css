@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   color: cornflowerblue;
-  background-color: #e3f8ff;
+  background-color: #85e1ff;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
@@ -38,7 +38,7 @@ body {
   margin-top: 10%;
   justify-content: center;
   align-items: center;
-  background-color: #e3f8ff;
+  background-color: #85e1ff;
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
   
 }

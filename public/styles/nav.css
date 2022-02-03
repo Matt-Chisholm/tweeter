@@ -1,5 +1,5 @@
 nav {
-  color: rgb(0, 92, 121);
+  color: rgb(101, 216, 252);
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -8,6 +8,11 @@ nav {
   top: 0;
 	width: 100%;
   z-index: 10;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+
+.logo {
+  font-size: 1.2em;
 }
 
 .navitems {

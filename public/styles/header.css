@@ -8,12 +8,13 @@
   justify-content: center;
   background-color: #e3f8ff;
   background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
-  color:cornflowerblue;
+  color:rgb(179, 205, 255);
   top: 0;
   left: 0;
   opacity: 90%;
   margin-top: 10%;
   margin-left: 2%;
+  border-radius: 100px;
 }
 
 .avatar img {
@@ -25,8 +26,9 @@
 
 .myname {
   padding-bottom: 10px;
-  color: steelblue;
+  color: rgb(149, 200, 241);
   font-family: 'Bungee', cursive;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -34,5 +36,7 @@
     width: 100%;
     height: 40%;
     margin-top: 0%;
+    margin: 0px;
+    border-radius: 0px;
   }
 }
