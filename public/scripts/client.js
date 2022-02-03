@@ -49,9 +49,9 @@ $(() => {
           </p>
           <footer class="tweetfooter">
             <div class="tweettime">${timeago.format(tweet.created_at)}</div>
-            <div>
+            <div class="icons">
               <i class="fas fa-flag icon-footer"></i>
-              <i class="fas fa-heart icon-footer"></i>
+              <i id="123" class="fas fa-heart icon-footer"></i>
               <i class="fas fa-retweet icon-footer"></i>
             </div>
           </footer>
@@ -112,7 +112,14 @@ $(() => {
 // Toggles the new-tweet form 
   $('.newtweetnav').on('click', function() {
     $('.new-tweet').slideToggle(200);
-  })
+  });
+
+  $(".fa-heart").bind('click', function(event) {
+    console.log('Clicked', this);
+    $(this).css("background-color", "pink");
+  });
+
+
 
   const btn = $('#button');
 

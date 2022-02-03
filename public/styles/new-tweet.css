@@ -6,7 +6,8 @@
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   border-radius: 15px;
   color: darkcyan;
-  border: black solid 2px;
+  border: black solid 0.2em;
+  width: 50%;
 }
 
 .new-tweet:hover {
@@ -16,13 +17,13 @@
 .tweet-text {
   background-color: #e3f8ff;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
-  width: 600px;
+  width: 80%;
   height: auto;
   border-width: 4px;
   border-top: hidden;
   border-left: hidden;
   border-right: hidden;
-  border-image: unset;
+  margin-left: 8%;
 
 }
 
@@ -48,11 +49,11 @@
   background-color: rgb(77, 154, 206); /* Green */
   border: none;
   color:whitesmoke;
-  padding: 15px 32px;
+  padding: 1.5em 1.5em;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 30px;
+  font-size: 0.6em;
+  border-radius: 3em;
   font-family: 'Bungee', cursive;
   border: white solid 2px;
   cursor: pointer;
@@ -70,8 +71,9 @@
   width: 100%;
   background-color: whitesmoke;
   color: red;
-  padding: 10px;
+  padding: 1em;
   border: black solid 3px;
   display: none;
   text-align: center;
 }
+

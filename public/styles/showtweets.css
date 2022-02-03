@@ -3,23 +3,27 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 800px;
-  /* height: 300px; */
-  padding: 10px;
-  margin: 30px 0 10px 0;
+  width: 100%;
+
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 10%;
+  margin-top: 10%;
   background-color: #e3f8ff;
   color:darkcyan;
+  
 }
 
 article:hover {
   box-shadow: 5px 7px;
 }
 
+.tweetcontainer {
+  width: 50%;
+}
+
 
 .tweetheader {
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,11 +47,12 @@ article:hover {
   display: flex;
   flex-wrap: wrap;
   word-wrap: break-word;
-  width: 774px;
+  text-overflow: ellipsis;
+  width: 90%;
   justify-content: flex-start;
   align-items: flex-end;
   color: rgb(58, 58, 58);
-  border-bottom: rgb(10, 10, 10) solid 1px;
+  margin-left: 3%;
 }
 
 .tweetfooter {
@@ -94,4 +99,16 @@ article:hover {
   font-size: 2em;
   line-height: 50px;
   color: black;
+}
+
+.fa-heart:hover {
+  color: pink;
+}
+
+.fa-heart:active {
+  color: rgb(236, 90, 115);
+}
+
+.clicked {
+  color:pink;
 }
