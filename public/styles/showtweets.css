@@ -4,10 +4,8 @@ article {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   margin-bottom: 10%;
-  margin-top: 10%;
   background-color: #e3f8ff;
   color:darkcyan;
   
@@ -27,16 +25,18 @@ article:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .name {
   display: flex;
-  /* margin-top: 10px; */
-  margin-right: 270px;
   justify-content: space-between;
   align-self:flex-start;
 }
 
+.handle {
+
+}
 .userimg {
   width: 60px;
   height: 60px;
@@ -109,6 +109,8 @@ article:hover {
   color: rgb(236, 90, 115);
 }
 
-.clicked {
-  color:pink;
+@media only screen and (max-width: 1024px) {
+  article {
+    margin-top: 30%;
+  }
 }

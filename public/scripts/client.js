@@ -42,7 +42,7 @@ $(() => {
     let html = `<article>
           <header class="tweetheader">
             <div class="name"><img class="userimg" src="${tweet.user.avatars}"><h3>${tweet.user.name}</h3></div>
-            <h5>${tweet.user.handle}</h5>
+            <h5 class="handle">${tweet.user.handle}</h5>
           </header>
           <p class="tweetitself">
             ${escape(tweet.content.text)}

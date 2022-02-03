@@ -8,6 +8,8 @@
   color: darkcyan;
   border: black solid 0.2em;
   width: 50%;
+  margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 .new-tweet:hover {
