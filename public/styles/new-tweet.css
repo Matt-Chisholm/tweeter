@@ -79,3 +79,8 @@
   text-align: center;
 }
 
+@media (max-width: 570px) {
+  .new-tweet {
+    margin-top: 25%;
+  }
+}

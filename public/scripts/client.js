@@ -104,6 +104,8 @@ $(() => {
     }).then(() => {
       $(".error").slideUp();
       loadTweets();
+      $('.newtweetnav').slideToggle(200);
+      $('.new-tweet').slideToggle(200);
       // clears form after submit
       $('form').trigger('reset');
     })
@@ -112,6 +114,7 @@ $(() => {
 // Toggles the new-tweet form 
   $('.newtweetnav').on('click', function() {
     $('.new-tweet').slideToggle(200);
+    $('.newtweetnav').slideToggle(200);
   });
 
   $(".fa-heart").bind('click', function(event) {
