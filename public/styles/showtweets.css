@@ -8,7 +8,7 @@ article {
   margin-bottom: 10%;
   background-color: #e3f8ff;
   color:darkcyan;
-  
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
 }
 
 article:hover {
@@ -82,11 +82,16 @@ article:hover {
   transition: background-color .3s;
   z-index: 1000;
   border-radius: 30px;
+  display:none;
 }
 
 #button:hover {
   cursor: pointer;
-  background-color:darkblue;
+  background-color:coral;
+}
+
+.show {
+  display: block;
 }
 
 
@@ -97,7 +102,7 @@ article:hover {
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: black;
+  color: white;
 }
 
 .fa-heart:hover {

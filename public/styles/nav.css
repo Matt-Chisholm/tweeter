@@ -3,7 +3,9 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  height: 120px;
+  height: 20%;
+  padding-left: 2%;
+  padding-right: 2%;
 	position: sticky;
   top: 0;
 	width: 100%;
