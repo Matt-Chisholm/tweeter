@@ -34,9 +34,6 @@ article:hover {
   align-self:flex-start;
 }
 
-.handle {
-
-}
 .userimg {
   width: 60px;
   height: 60px;
@@ -61,10 +58,12 @@ article:hover {
   justify-content: space-between;
   color: rgb(58, 58, 58);
 }
+
 .icon-footer {
   color: lightslategrey;
   cursor: pointer;
 }
+
 .icon-footer:hover {
   color: orange;
 } 

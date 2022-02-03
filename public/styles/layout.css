@@ -27,6 +27,7 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ 
 .container {
   margin-left: 5%;
   margin-right: 5%;
@@ -41,11 +42,6 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
   
 }
-
-.clicked {
-  color:pink;
-}
-
 
 @media only screen and (max-width: 1024px) {
   .container {

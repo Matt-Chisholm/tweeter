@@ -48,7 +48,7 @@
 
 
 .tweetbutton {
-  background-color: rgb(77, 154, 206); /* Green */
+  background-color: rgb(77, 154, 206);
   border: none;
   color:whitesmoke;
   padding: 1.5em 1.5em;
@@ -70,7 +70,7 @@
 }
 
 .error {
-  width: 100%;
+  width: 40%;
   background-color: whitesmoke;
   color: red;
   padding: 1em;
@@ -82,5 +82,11 @@
 @media (max-width: 570px) {
   .new-tweet {
     margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .error {
+    margin-top: 20%;
   }
 }
