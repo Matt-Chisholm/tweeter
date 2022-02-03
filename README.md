@@ -6,6 +6,19 @@ Tweeter is a modern, dynamic, single-page Twitter clone.
 
 ## Final Screenshots
 
+- Desktop View
+!["Screenshot of URLs page"](https://github.com/Matt-Chisholm/tweeter/blob/master/public/images/tweeter1.png?raw=true)
+
+- Mobile View
+!["Screenshot of URLs page"](https://github.com/Matt-Chisholm/tweeter/blob/master/public/images/tweeter2.png?raw=true)
+
+## Features
+
+- Animated Compose Tweet button that is toggle enabled.
+- New Tweet Form with a character counter that updates dynamically and with errors to ensure tweets are valid/not malicious.
+- Dynamic, single page updating of submitting/fetching new tweets.
+- Responsive to tablets and even smaller mobile devices.
+
 
 ## Getting Started
 
