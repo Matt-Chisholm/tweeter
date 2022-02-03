@@ -1,8 +1,8 @@
 nav {
-  color: #FFFFFF;
+  color: cornflowerblue;
   display: flex;
   justify-content: space-between;
-  background-color: #4056A1;
+  background-color: transparent;
   height: 120px;
 	position: sticky;
   top: 0;

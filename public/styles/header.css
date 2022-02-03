@@ -11,12 +11,14 @@
   color:cornflowerblue;
   top: 0;
   left: 0;
+  opacity: 80%;
 }
 
 .avatar img {
   padding-top: 140px;
   width: 150px;
   height: auto;
+  opacity: 100%;
 }
 
 .myname {

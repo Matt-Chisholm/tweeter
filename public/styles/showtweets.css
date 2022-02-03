@@ -47,7 +47,7 @@ article:hover {
   justify-content: flex-start;
   align-items: flex-end;
   color: rgb(58, 58, 58);
-  border-bottom: rgb(10, 10, 10) solid 3px;
+  border-bottom: rgb(10, 10, 10) solid 1px;
 }
 
 .tweetfooter {
